@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tenDp">10dp</dimen>
+    <dimen name="fontHeader">18sp</dimen>
+    <dimen name="zeroDp">0dp</dimen>
+    <dimen name="twentyDp">20dp</dimen>
+    <dimen name="thirtyDp">30dp</dimen>
+</resources>

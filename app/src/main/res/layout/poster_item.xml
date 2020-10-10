@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="posterData"
+            type="com.task.diagnal.data.PostData.Page.ContentItems.Content" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:paddingTop="@dimen/twentyDp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPosterImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zeroDp"
+            android:background="@android:color/white"
+            app:layout_constraintDimensionRatio="1:1.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPosterTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{posterData.name}"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivPosterImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
